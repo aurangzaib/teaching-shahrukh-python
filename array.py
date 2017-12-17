@@ -1,11 +1,21 @@
+# np is shorthand for numpy
+import numpy as np
+
+
 """
+print 's' 5 times
+"""
+
+for index in range(0, 5):
+  print('s')
+
+"""
+array has "index" and "element (value)"
 range(len()) --> gives index
 for element in array --> gives element
 zip --> loops multiple arrays
 """
 
-# np is shorthand for numpy
-import numpy as np
 an_array = np.array(['a','b','c', 'd'])
 an_array_2 = np.array(['nimra', 'baber', 'js', 'ms'])
 # task:
@@ -25,3 +35,26 @@ print()
 # loops through multiple array at once
 for element1, element2 in zip(an_array, an_array_2):
   print("element of an_array:", element1, ",element of an_array_2:", element2)
+
+print()
+# find_stop_index --> print index when stop ('s') is found
+
+def find_stop_index():
+  road = np.array(['r', 'r', 'r', 'r', 'r', 's', 'r'])
+  for index in range(len(road)):
+    if road[index] == 's':
+      print ("index of 's':", index)
+
+find_stop_index()
+
+def find_stop_index_or_break(n):
+  road = np.array(['r', 'r', 'r', 'r', 'r', 's', 'r'])
+  for index in range(len(road)):
+    if road[index] == 's':
+      print ("index of 's':", index)
+    # if 's' is not found in first n elements
+    if index == n:
+      print("s is not found in first", n, "elements")
+      break # get out of loop
+
+find_stop_index_or_break(3)
