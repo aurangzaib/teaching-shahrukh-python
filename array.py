@@ -58,3 +58,33 @@ def find_stop_index_or_break(n):
       break # get out of loop
 
 find_stop_index_or_break(3)
+
+
+# This function takes in the road and determines where to stop
+def find_stop_index_udacity(road):
+    ## TODO: Iterate through the road array
+    ## TODO: Check if a stop sign ('s') is found in the array
+    ## If one is, break out of your iteration
+    ## and return the value of the index that is *right before* the stop sign
+    ## Change the stop_index value
+    stop_index = 0
+    
+    for index in range(len(road)):
+        if road[index] == 's':
+            # - 1 because 'right before stop sign' 
+            stop_index = index - 1
+            # get out of loop
+            break
+    
+    return stop_index
+
+  # This function takes in the road and determines where to stop
+def find_stop_index_udacity_simpler(road):
+    ## TODO: Iterate through the road array
+    ## TODO: Check if a stop sign ('s') is found in the array
+    ## If one is, break out of your iteration
+    ## and return the value of the index that is *right before* the stop sign
+    ## Change the stop_index value
+        for index in range(len(road)):
+        if road[index] == 's':
+          return index - 1
