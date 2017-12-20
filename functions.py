@@ -34,3 +34,15 @@ def another_function():
 # using a function
 # () is called invocation
 my_function()
+
+
+# Default Arguments/Parameters
+# in python we can have default arguments for functions
+# 1,2,3 are default values
+# default values are used when user doesn't provide any value
+def yet_another_function(a=1, b=2, c=3):
+    print("sum: ", a + b + c)
+
+
+yet_another_function(5, 6, 7)
+yet_another_function()

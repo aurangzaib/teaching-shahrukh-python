@@ -34,7 +34,7 @@ print(an_array[4])
 
 # matrix is array of arrays
 a_matrix = [
-    [1, "nimra", 3.34, 4, "shahrukh"],
+    [1, "nimra", 3.34, 4, "shahrukh"],  # array
     [3, "madiha", 3.44, 1, "shafi_bhai"]
 ]
 
@@ -47,7 +47,7 @@ print(a_matrix[1][4])
 
 # tuple is array of pairs
 a_tuple = [
-    ("name", "baber"),
+    ("name", "baber"), # pairs
     ("last_name", "ali")
 ]
 
@@ -77,7 +77,7 @@ print(an_object["name"])
 
 # collection is array of objects
 a_collection = [
-    {
+    {                         # object
         "name": "baber",
         "last_name": "ali"
     },
