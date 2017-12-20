@@ -3,10 +3,10 @@
 13. December 2017
 
 Data structures in Python
-    1D Array
-    2D Matrix
+    1D Array            --> detail in 1D_array.py
+    2D Matrix           --> detail in 2D_array.py
     Tuple
-    Object
+    Object & Classes    --> detail in classes.py
     Collection
 
 """
@@ -63,8 +63,8 @@ print(a_tuple[1][1])
 """**** object ****"""
 
 # object is a key-value pair
-# name  --> key
-# baber --> value
+# key   --> name
+# value --> baber
 an_object = {
     "name": "baber",
     "last_name": "ali"
